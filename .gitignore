@@ -1,0 +1,24 @@
+env
+**/__pycache__
+**/__pycache__/*.pyc
+**/*.sqlite3
+**/node_modules
+**/.pnp
+**.pnp.js
+
+# testing
+**/coverage
+
+# production
+frontend/front-end/build
+
+# misc
+frontend/front-end/.DS_Store
+frontend/front-end/.env.local
+frontend/front-end/.env.development.local
+frontend/front-end/.env.test.local
+frontend/front-end/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
