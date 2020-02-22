@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url, include
+from django.views.static import serve
+from django.conf import settings
+from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+	url(r'^', include('scouting.urls')),
+	url(r'^login/', obtain_auth_token),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
