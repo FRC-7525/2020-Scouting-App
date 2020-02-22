@@ -12,7 +12,7 @@ After cloning the repo, you'll need to do the following to build the individual 
 ```
 virtualenv -p python3 env
 source env/bin/activate
-pip3 install django djangorestframework
+pip3 install django djangorestframework django-cors-headers
 ```
 2. Navigate to ./frontend/front-end and run ```npm install``` (you may need to elevate permissions with to run this command e.g. ```sudo npm install```)
 
