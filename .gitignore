@@ -6,6 +6,9 @@ env
 **/.pnp
 **.pnp.js
 
+# migrations
+**/migrations/*.py
+
 # testing
 **/coverage
 
