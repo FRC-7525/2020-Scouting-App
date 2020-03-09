@@ -5,7 +5,15 @@ from scouting.views import *
 
 router = DefaultRouter()
 
-# router.register(r'users', UserViewSet)
+router.register(r'users', UserViewSet)
+router.register(r'teams', TeamViewSet)
+router.register(r'profiles', UserProfileViewSet)
+router.register(r'questions', PitPromptViewSet)
+router.register(r'competition', CompetitionViewSet)
+router.register(r'pitScouting', PitScoutingViewSet)
+router.register(r'matches', MatchViewSet)
+router.register(r'matchData', MatchDataViewSet)
+router.register(r'teamMatchRels', TeamMatchRelViewSet)
 # router.register(r'band_profiles', BandProfileViewSet)
 # router.register(r'user_profiles', UserProfileViewSet)
 # router.register(r'genres', GenreViewSet)
